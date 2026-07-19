@@ -230,6 +230,8 @@ h2 .lime { color: var(--accent); }
 .sec-copy { margin-top: 26px; max-width: 60ch; color: var(--ink-2); font-size: 18px; }
 .sec-copy + .sec-copy { margin-top: 15px; }
 .sec-copy strong { color: var(--ink); font-weight: 600; }
+.sec-copy a { border-bottom: 1px dotted var(--accent-soft); }
+.sec-copy a strong { color: var(--accent); }
 
 /* line-art figure */
 .figure-frame { position: relative; padding: 46px 40px; margin: 20px auto 44px; max-width: 860px; }
