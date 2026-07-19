@@ -95,16 +95,16 @@
   var gridY = [0, 50, 100, 150, 200];
   var gridLines = gridY.map(function (v) {
     return '<line x1="' + PAD.l + '" x2="' + (W - PAD.r) + '" y1="' + py(v) + '" y2="' + py(v) +
-      '" stroke="#161d2a" stroke-width="1"/>' +
+      '" stroke="#2a2414" stroke-width="1"/>' +
       '<text x="' + (PAD.l - 10) + '" y="' + (py(v) + 4) + '" text-anchor="end" ' +
-      'font-family="IBM Plex Mono, monospace" font-size="11" fill="#5c6575">' + v + "</text>";
+      'font-family="Space Mono, monospace" font-size="11" fill="#8b8577">' + v + "</text>";
   }).join("");
 
   // x labels every 4 hours
   var xLabels = "";
   for (var k = 0; k < POINTS; k += 24) {
     xLabels += '<text x="' + px(k) + '" y="' + (H - 8) + '" text-anchor="middle" ' +
-      'font-family="IBM Plex Mono, monospace" font-size="11" fill="#5c6575">' + fmtHour(series[k].hour) + "</text>";
+      'font-family="Space Mono, monospace" font-size="11" fill="#8b8577">' + fmtHour(series[k].hour) + "</text>";
   }
 
   var svg =
@@ -116,8 +116,8 @@
     gridLines + xLabels +
     '<path d="' + areaD + '" fill="url(#fillg)"/>' +
     '<path d="' + lineD + '" fill="none" stroke="#ccff00" stroke-width="2" stroke-linejoin="round"/>' +
-    '<line id="xhair" x1="0" x2="0" y1="' + PAD.t + '" y2="' + (PAD.t + plotH) + '" stroke="#5c6575" stroke-width="1" stroke-dasharray="3 3" style="display:none"/>' +
-    '<circle id="xdot" r="4" fill="#ccff00" stroke="#07090d" stroke-width="2" style="display:none"/>' +
+    '<line id="xhair" x1="0" x2="0" y1="' + PAD.t + '" y2="' + (PAD.t + plotH) + '" stroke="#8b8577" stroke-width="1" stroke-dasharray="3 3" style="display:none"/>' +
+    '<circle id="xdot" r="4" fill="#ccff00" stroke="#100d05" stroke-width="2" style="display:none"/>' +
     "</svg>";
   box.insertAdjacentHTML("beforeend", svg);
 
@@ -174,11 +174,11 @@
     result.className = "";
     if (!v) { result.textContent = ""; return; }
     if (!/^0x[0-9a-fA-F]{40}$/.test(v)) {
-      result.className = "err";
+      result.className = "err show";
       result.textContent = "✕ Not a valid EVM address (0x + 40 hex chars).";
       return;
     }
-    result.className = "ok";
+    result.className = "ok show";
     result.textContent =
       "✓ Address format valid. DEMO MODE — $RANCH isn't deployed yet. Once live, this runs a " +
       "read-only balanceOf() against Robinhood Chain RPC (id 4663). Nothing is signed or stored.";

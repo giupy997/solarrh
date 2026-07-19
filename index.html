@@ -7,167 +7,172 @@
   <meta name="description" content="Small solar-powered data nodes whose every watt is signed and posted on Robinhood Chain. Proof of Sunlight: don't trust the ranch, read the chain.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='42' fill='%23ccff00'/></svg>">
 </head>
 <body>
 
-  <!-- ============ NAV ============ -->
-  <nav class="nav">
-    <div class="wrap nav-inner">
-      <a class="logo" href="#top">
-        <span class="logo-mark"></span>
-        SOLAR&nbsp;RANCH <small>CORP.</small>
-      </a>
-      <div class="nav-links">
-        <a href="#mission">Mission</a>
-        <a href="#herd">The Herd</a>
-        <a href="#protocol">Protocol</a>
-        <a href="#telemetry">Telemetry</a>
-        <a href="#token">$RANCH</a>
-        <a href="#faq">FAQ</a>
-        <a class="nav-cta" href="#telemetry">Live telemetry</a>
-      </div>
-    </div>
-  </nav>
-
-  <!-- ============ HERO ============ -->
-  <header class="hero" id="top">
-    <div class="wrap">
-      <p class="eyebrow">Solar Ranch Corporation · a mini-DePIN on Robinhood Chain</p>
-      <h1>Earth's grid can't keep up. <em>The sun doesn't care.</em></h1>
-      <p class="hero-sub">
-        We build small solar-powered data nodes and prove every watt on-chain.
-        Off-grid compute, signed at the source, verifiable by anyone with a block explorer.
-      </p>
-      <div class="hero-ctas">
-        <a class="btn btn-primary" href="#telemetry">View live telemetry</a>
-        <a class="btn btn-ghost" href="#protocol">Read the protocol</a>
-      </div>
-      <div class="hero-status">
-        <span><span class="dot dot-warn"></span><b>LONGHORN-01</b> — in build</span>
-        <span><span class="dot dot-idle"></span><b>PROOF OF SUNLIGHT</b> — contract in design</span>
-        <span><span class="dot dot-live"></span><b>CHAIN</b> — Robinhood Chain · id 4663</span>
-      </div>
-    </div>
+  <!-- ============ HEADER ============ -->
+  <header class="site-head wrap">
+    <a href="#top" class="wordmark" id="top">SOLAR<br>RANCH<span class="corp">CORP.</span></a>
+    <span class="logo-mark" aria-label="Solar Ranch mark">
+      <!-- sun-asterisk rising over a ridge -->
+      <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <g>
+          <path d="M50 8 L54 28 L50 24 L46 28 Z"/>
+          <path d="M50 8 L54 28 L50 24 L46 28 Z" transform="rotate(45 50 34)"/>
+          <path d="M50 8 L54 28 L50 24 L46 28 Z" transform="rotate(90 50 34)"/>
+          <path d="M50 8 L54 28 L50 24 L46 28 Z" transform="rotate(135 50 34)"/>
+          <path d="M50 8 L54 28 L50 24 L46 28 Z" transform="rotate(180 50 34)"/>
+          <path d="M50 8 L54 28 L50 24 L46 28 Z" transform="rotate(225 50 34)"/>
+          <path d="M50 8 L54 28 L50 24 L46 28 Z" transform="rotate(270 50 34)"/>
+          <path d="M50 8 L54 28 L50 24 L46 28 Z" transform="rotate(315 50 34)"/>
+          <circle cx="50" cy="34" r="9"/>
+          <path d="M2 92 Q50 44 98 92 L98 96 L2 96 Z"/>
+        </g>
+      </svg>
+    </span>
   </header>
 
-  <!-- ============ MISSION ============ -->
-  <section id="mission">
-    <div class="wrap">
-      <p class="sec-eyebrow"><b>01</b> — MISSION</p>
-      <h2>Some point rockets at the problem. We point panels at it.</h2>
-      <p class="sec-copy">
-        Compute demand is outrunning the grid. Datacenter queues stretch years; the honest
-        answer for most builders isn't a bigger substation — and it isn't orbit either.
-        Orbital solar compute is a beautiful answer for someone with a launchpad.
-      </p>
-      <p class="sec-copy">
-        Ours is smaller and verifiable: <strong>put compute where the sun already lands,
-        off-grid, and publish the receipts.</strong> No renders of satellites. A panel,
-        a battery, a node, a chain.
-      </p>
-      <div class="trio">
-        <div class="trio-cell">
-          <h3>Off-grid</h3>
-          <p>Every node in the Herd powers itself. Panel in, services out. If the battery dies, the node sleeps — and the chain shows it slept.</p>
-        </div>
-        <div class="trio-cell">
-          <h3>On-chain</h3>
-          <p>Telemetry epochs — watts, battery, data served — are signed by the node and posted to Robinhood Chain. Public, timestamped, cheap to verify.</p>
-        </div>
-        <div class="trio-cell">
-          <h3>No promises</h3>
-          <p>We only claim what the hardware proves. If the sun didn't shine, the chain says so. That's the whole pitch.</p>
-        </div>
-      </div>
+  <!-- ============ HERO ============ -->
+  <section class="hero wrap">
+    <h1 class="hero-display">Earth's grid can't keep up. <em>The sun doesn't care.</em></h1>
+    <p class="hero-sub">
+      Solar Ranch Corp. builds small solar-powered data nodes and proves every watt
+      on-chain. Off-grid compute, signed at the source, verifiable by anyone with a
+      block explorer.
+    </p>
+    <div class="hero-tags">
+      <span>LONGHORN-01 — <b>IN BUILD</b></span>
+      <span>PROOF OF SUNLIGHT — <b>CONTRACT IN DESIGN</b></span>
+      <span>CHAIN — <b>ROBINHOOD · ID 4663</b></span>
+    </div>
+
+    <div class="screen-card">
+      <span class="screen-chip">Simulated feed — hardware in build</span>
+      <div class="horizon"></div>
+      <div class="sun"></div>
+      <span class="wordmark">SOLAR RANCH</span>
     </div>
   </section>
 
-  <!-- ============ THE HERD ============ -->
-  <section id="herd">
-    <div class="wrap">
-      <p class="sec-eyebrow"><b>02</b> — THE HERD</p>
-      <h2>A data center the size of a saddlebag. Then another.</h2>
-      <p class="sec-copy">
-        The Herd is our node fleet. Each steer is a self-powered micro data node running
-        real services — VPN exit, relay, storage — with a power sensor on its intake and
-        a signing key in its pocket. The full bill of materials will be public: anyone
-        should be able to audit the herd, and one day raise their own steer.
+  <div class="connector"><span class="node">✳</span><span class="stem"></span></div>
+
+  <!-- ============ INTRO (bracketed statement) ============ -->
+  <section class="intro wrap">
+    <div class="bracket-frame">
+      <span class="corner tl"></span><span class="corner tr"></span>
+      <span class="corner bl"></span><span class="corner br"></span>
+      <p>
+        Solar Ranch Corp. is building a herd of solar-powered data nodes that never
+        touch the grid. Each one measures its own sunlight, signs the reading, and
+        posts it to Robinhood Chain every ten minutes. Earth's energy grid can't run
+        at the pace of AI. <strong>The sun doesn't file connection requests.</strong>
       </p>
-      <div class="herd-grid">
-        <article class="node-card primary">
-          <div class="node-head">
-            <span class="node-name">LONGHORN-01</span>
-            <span class="badge badge-build">In build</span>
-          </div>
-          <ul class="spec-list">
-            <li><span class="k">PV array</span><span class="v">200 W mono panel</span></li>
-            <li><span class="k">Storage</span><span class="v">512 Wh LiFePO₄</span></li>
-            <li><span class="k">Compute</span><span class="v">ARM64 · 8 GB</span></li>
-            <li><span class="k">Service</span><span class="v">WireGuard exit node</span></li>
-            <li><span class="k">Sensing</span><span class="v">INA226 power monitor</span></li>
-            <li><span class="k">Uplink</span><span class="v">LTE · failover Wi-Fi</span></li>
-          </ul>
-          <p class="node-note">First steer. Bench assembly in progress; posts epoch #1 the day it goes off-grid.</p>
-        </article>
-        <article class="node-card">
-          <div class="node-head">
-            <span class="node-name">MAVERICK-02</span>
-            <span class="badge badge-planned">Planned</span>
-          </div>
-          <ul class="spec-list">
-            <li><span class="k">PV array</span><span class="v">400 W</span></li>
-            <li><span class="k">Storage</span><span class="v">1 kWh LiFePO₄</span></li>
-            <li><span class="k">Service</span><span class="v">Relay + edge cache</span></li>
-          </ul>
-          <p class="node-note">Second steer. Site scouting — funded by the hardware pool once LONGHORN-01 is live.</p>
-        </article>
-        <article class="node-card">
-          <div class="node-head">
-            <span class="node-name">BRONCO-03</span>
-            <span class="badge badge-planned">Planned</span>
-          </div>
-          <ul class="spec-list">
-            <li><span class="k">PV array</span><span class="v">TBD</span></li>
-            <li><span class="k">Storage</span><span class="v">TBD</span></li>
-            <li><span class="k">Service</span><span class="v">Storage-class node</span></li>
-          </ul>
-          <p class="node-note">Storage-class steer for holder file drops. Spec opens after MAVERICK-02.</p>
-        </article>
-      </div>
     </div>
   </section>
+
+  <div class="connector"><span class="node">✳</span><span class="stem"></span></div>
+
+  <!-- ============ PROBLEM ============ -->
+  <section class="wrap" id="mission">
+    <p class="sec-label"><b>01</b> — MISSION</p>
+    <h2>The grid ends at the fence line.</h2>
+    <p class="sec-copy">
+      AI is driving the largest infrastructure buildout in recent history, and the
+      power grid can't keep pace — in major markets, connection lead times for new
+      data centers run five to seven years. Some companies are pointing rockets at
+      the problem and hauling compute to orbit.
+    </p>
+    <p class="sec-copy">
+      Ours is smaller and verifiable: <strong>put compute where the sun already lands,
+      off-grid, and publish the receipts.</strong> No renders of satellites. A panel,
+      a battery, a node, a chain.
+    </p>
+
+    <div class="figure-frame">
+      <span class="corner tl"></span><span class="corner tr"></span>
+      <span class="corner bl"></span><span class="corner br"></span>
+      <!-- engraving-style line art: LONGHORN-01 solar node -->
+      <svg viewBox="0 0 860 300" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#d8d2c4" stroke-width="1.4" aria-label="Technical line drawing of the LONGHORN-01 solar node: two solar panel wings around a central equipment body">
+        <defs>
+          <pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+            <line x1="0" y1="0" x2="0" y2="7" stroke="#8b8577" stroke-width="0.8"/>
+          </pattern>
+        </defs>
+        <!-- left wing -->
+        <g>
+          <rect x="30" y="70" width="300" height="120" rx="4"/>
+          <rect x="30" y="70" width="300" height="120" rx="4" fill="url(#hatch)" opacity="0.5" stroke="none"/>
+          <line x1="105" y1="70" x2="105" y2="190"/><line x1="180" y1="70" x2="180" y2="190"/><line x1="255" y1="70" x2="255" y2="190"/>
+          <line x1="30" y1="130" x2="330" y2="130"/>
+          <line x1="330" y1="130" x2="368" y2="130"/>
+        </g>
+        <!-- right wing -->
+        <g>
+          <rect x="530" y="70" width="300" height="120" rx="4"/>
+          <rect x="530" y="70" width="300" height="120" rx="4" fill="url(#hatch)" opacity="0.5" stroke="none"/>
+          <line x1="605" y1="70" x2="605" y2="190"/><line x1="680" y1="70" x2="680" y2="190"/><line x1="755" y1="70" x2="755" y2="190"/>
+          <line x1="530" y1="130" x2="830" y2="130"/>
+          <line x1="492" y1="130" x2="530" y2="130"/>
+        </g>
+        <!-- central body -->
+        <g>
+          <rect x="368" y="52" width="124" height="156" rx="10"/>
+          <line x1="368" y1="86" x2="492" y2="86"/>
+          <line x1="368" y1="174" x2="492" y2="174"/>
+          <circle cx="430" cy="130" r="26"/>
+          <path d="M430 112 L433 124 L430 121 L427 124 Z" fill="#d8d2c4" stroke="none"/>
+          <path d="M430 112 L433 124 L430 121 L427 124 Z" fill="#d8d2c4" stroke="none" transform="rotate(90 430 130)"/>
+          <path d="M430 112 L433 124 L430 121 L427 124 Z" fill="#d8d2c4" stroke="none" transform="rotate(180 430 130)"/>
+          <path d="M430 112 L433 124 L430 121 L427 124 Z" fill="#d8d2c4" stroke="none" transform="rotate(270 430 130)"/>
+          <line x1="380" y1="62" x2="392" y2="62"/><line x1="380" y1="70" x2="404" y2="70"/>
+          <line x1="404" y1="188" x2="480" y2="188"/><line x1="418" y1="196" x2="480" y2="196"/>
+        </g>
+        <!-- ground stand + shadow -->
+        <line x1="410" y1="208" x2="396" y2="252"/><line x1="450" y1="208" x2="464" y2="252"/>
+        <line x1="330" y1="252" x2="530" y2="252"/>
+        <line x1="300" y1="262" x2="360" y2="262" opacity="0.4"/><line x1="500" y1="262" x2="560" y2="262" opacity="0.4"/>
+        <!-- dimension marks -->
+        <line x1="30" y1="230" x2="330" y2="230" stroke-dasharray="4 5" opacity="0.5"/>
+        <text x="180" y="222" fill="#8b8577" stroke="none" font-family="Space Mono, monospace" font-size="11" text-anchor="middle" letter-spacing="2">PV WING — 200 W</text>
+        <line x1="530" y1="230" x2="830" y2="230" stroke-dasharray="4 5" opacity="0.5"/>
+        <text x="680" y="222" fill="#8b8577" stroke="none" font-family="Space Mono, monospace" font-size="11" text-anchor="middle" letter-spacing="2">LiFePO₄ — 512 Wh</text>
+      </svg>
+      <p class="figure-cap">FIG. 01 — LONGHORN-01 · SELF-POWERED DATA NODE · GROUND-MOUNTED</p>
+    </div>
+  </section>
+
+  <div class="connector"><span class="node">✳</span><span class="stem"></span></div>
 
   <!-- ============ PROTOCOL ============ -->
-  <section id="protocol">
-    <div class="wrap">
-      <p class="sec-eyebrow"><b>03</b> — PROOF OF SUNLIGHT</p>
-      <h2>Don't trust the ranch. Read the chain.</h2>
-      <p class="sec-copy">
-        Proof of Sunlight is a small telemetry contract on Robinhood Chain. Every ten
-        minutes, each node signs a reading and posts it. No oracle committee, no
-        middleman dashboard — the node speaks for itself, and the explorer is the audit.
-      </p>
-      <div class="steps">
-        <div class="step">
-          <p class="step-num">STEP / 01</p>
-          <h3>Measure</h3>
-          <p>The INA226 sensor samples solar input, battery state and bytes served, straight from the wire — not from a self-reported config file.</p>
-        </div>
-        <div class="step">
-          <p class="step-num">STEP / 02</p>
-          <h3>Sign</h3>
-          <p>The node's onboard key signs the epoch. One key per steer, its address published on this page — spoofing a reading means stealing the physical box.</p>
-        </div>
-        <div class="step">
-          <p class="step-num">STEP / 03</p>
-          <h3>Post</h3>
-          <p>The signed epoch lands in the Proof of Sunlight contract on Robinhood Chain. Ten-minute cadence, gas measured in fractions of a cent.</p>
-        </div>
+  <section class="wrap" id="protocol">
+    <p class="sec-label"><b>02</b> — PROOF OF SUNLIGHT</p>
+    <h2>From the panel to the chain.</h2>
+    <p class="sec-copy">
+      Proof of Sunlight is a small telemetry contract on Robinhood Chain. Every ten
+      minutes, each node signs a reading and posts it. No oracle committee, no
+      middleman dashboard — the node speaks for itself, and the explorer is the audit.
+    </p>
+    <div class="steps">
+      <div class="step">
+        <p class="step-num">STEP / 01</p>
+        <h3>Measure</h3>
+        <p>The INA226 sensor samples solar input, battery state and bytes served, straight from the wire — not from a self-reported config file.</p>
       </div>
-      <div class="code-block"><span class="cm">// epoch payload — what LONGHORN-01 will post, every 10 minutes</span>
+      <div class="step">
+        <p class="step-num">STEP / 02</p>
+        <h3>Sign</h3>
+        <p>The node's onboard key signs the epoch. One key per steer, its address published on this page — spoofing a reading means stealing the physical box.</p>
+      </div>
+      <div class="step">
+        <p class="step-num">STEP / 03</p>
+        <h3>Post</h3>
+        <p>The signed epoch lands in the Proof of Sunlight contract on Robinhood Chain. Ten-minute cadence, gas measured in fractions of a cent.</p>
+      </div>
+    </div>
+    <div class="code-block"><span class="cm">// epoch payload — what LONGHORN-01 will post, every 10 minutes</span>
 {
   <span class="key">"node"</span>:        <span class="str">"LONGHORN-01"</span>,
   <span class="key">"epoch"</span>:       <span class="str">1</span>,
@@ -177,197 +182,261 @@
   <span class="key">"uptime_s"</span>:    <span class="str">600</span>,
   <span class="key">"sig"</span>:         <span class="str">"0x…"</span>       <span class="cm">// signed by the node key</span>
 }</div>
-      <div class="chain-facts">
-        <span>CHAIN — <b>Robinhood Chain (id 4663)</b></span>
-        <span>EXPLORER — <a href="https://robinhoodchain.blockscout.com" target="_blank" rel="noopener">robinhoodchain.blockscout.com</a></span>
-        <span>CONTRACT — <b>TBD · deploys with epoch #1</b></span>
-      </div>
+    <div class="chain-facts">
+      <span>CHAIN — <b>Robinhood Chain (id 4663)</b></span>
+      <span>EXPLORER — <a href="https://robinhoodchain.blockscout.com" target="_blank" rel="noopener">robinhoodchain.blockscout.com</a></span>
+      <span>CONTRACT — <b>TBD · deploys with epoch #1</b></span>
     </div>
   </section>
+
+  <div class="connector"><span class="node">✳</span><span class="stem"></span></div>
+
+  <!-- ============ THE HERD ============ -->
+  <section class="wrap" id="herd">
+    <p class="sec-label"><b>03</b> — THE HERD</p>
+    <h2>A data center the size of a saddlebag. <span class="lime">Then another.</span></h2>
+    <p class="sec-copy">
+      The Herd is our node fleet. Each steer is a self-powered micro data node running
+      real services — VPN exit, relay, storage — with a power sensor on its intake and
+      a signing key in its pocket. The full bill of materials will be public: anyone
+      should be able to audit the herd, and one day raise their own steer.
+    </p>
+    <div class="herd-grid">
+      <article class="node-card primary">
+        <div class="node-head">
+          <span class="node-name">LONGHORN-01</span>
+          <span class="badge badge-build">In build</span>
+        </div>
+        <ul class="spec-list">
+          <li><span class="k">PV array</span><span class="v">200 W mono panel</span></li>
+          <li><span class="k">Storage</span><span class="v">512 Wh LiFePO₄</span></li>
+          <li><span class="k">Compute</span><span class="v">ARM64 · 8 GB</span></li>
+          <li><span class="k">Service</span><span class="v">WireGuard exit node</span></li>
+          <li><span class="k">Sensing</span><span class="v">INA226 power monitor</span></li>
+          <li><span class="k">Uplink</span><span class="v">LTE · failover Wi-Fi</span></li>
+        </ul>
+        <p class="node-note">First steer. Bench assembly in progress; posts epoch #1 the day it goes off-grid.</p>
+      </article>
+      <article class="node-card">
+        <div class="node-head">
+          <span class="node-name">MAVERICK-02</span>
+          <span class="badge badge-planned">Planned</span>
+        </div>
+        <ul class="spec-list">
+          <li><span class="k">PV array</span><span class="v">400 W</span></li>
+          <li><span class="k">Storage</span><span class="v">1 kWh LiFePO₄</span></li>
+          <li><span class="k">Service</span><span class="v">Relay + edge cache</span></li>
+        </ul>
+        <p class="node-note">Second steer. Site scouting — funded by the hardware pool once LONGHORN-01 is live.</p>
+      </article>
+      <article class="node-card">
+        <div class="node-head">
+          <span class="node-name">BRONCO-03</span>
+          <span class="badge badge-planned">Planned</span>
+        </div>
+        <ul class="spec-list">
+          <li><span class="k">PV array</span><span class="v">TBD</span></li>
+          <li><span class="k">Storage</span><span class="v">TBD</span></li>
+          <li><span class="k">Service</span><span class="v">Storage-class node</span></li>
+        </ul>
+        <p class="node-note">Storage-class steer for holder file drops. Spec opens after MAVERICK-02.</p>
+      </article>
+    </div>
+  </section>
+
+  <div class="connector"><span class="node">✳</span><span class="stem"></span></div>
 
   <!-- ============ TELEMETRY ============ -->
-  <section id="telemetry">
-    <div class="wrap">
-      <div class="telemetry-head">
-        <p class="sec-eyebrow"><b>04</b> — TELEMETRY</p>
-        <span class="badge badge-sim">Simulated preview</span>
-      </div>
-      <h2>The dashboard the token answers to.</h2>
-      <p class="sec-copy">
-        This is what holding $RANCH points at: live numbers from real hardware.
-        Until LONGHORN-01 posts its first epoch, the feed below runs on a
-        <strong>simulation of a clear July day</strong> — clearly labeled, never blended with real data.
-      </p>
-
-      <div class="tiles" id="tiles">
-        <div class="tile">
-          <p class="tile-label">Solar output</p>
-          <p class="tile-value"><span id="t-watts">—</span><small>W</small></p>
-          <p class="tile-sub" id="t-watts-sub">of 200 W panel</p>
-        </div>
-        <div class="tile">
-          <p class="tile-label">Battery</p>
-          <p class="tile-value"><span id="t-batt">—</span><small>%</small></p>
-          <p class="tile-sub">512 Wh LiFePO₄</p>
-        </div>
-        <div class="tile">
-          <p class="tile-label">Data served · 24h</p>
-          <p class="tile-value"><span id="t-data">—</span><small>GB</small></p>
-          <p class="tile-sub">WireGuard exit</p>
-        </div>
-        <div class="tile">
-          <p class="tile-label">Epochs posted</p>
-          <p class="tile-value"><span id="t-epochs">—</span></p>
-          <p class="tile-sub">10-min cadence · 24h window</p>
-        </div>
-      </div>
-
-      <div class="chart-card">
-        <div class="chart-title-row">
-          <p class="chart-title">Solar output — last 24 h (W)</p>
-          <button class="chart-toggle" id="table-toggle" type="button">View as table</button>
-        </div>
-        <div id="chart-box" aria-label="Line chart of simulated solar output in watts over the last 24 hours. A data table alternative is available via the toggle button.">
-          <div id="chart-tooltip"></div>
-        </div>
-        <div id="chart-table"></div>
-      </div>
-
-      <p class="telemetry-note">
-        <b>SIMULATED DATA.</b> Generated in your browser from a clear-sky solar model.
-        The live feed replaces this section the day LONGHORN-01 posts epoch #1 on-chain.
-      </p>
+  <section class="wrap" id="telemetry">
+    <div class="telemetry-head">
+      <p class="sec-label" style="margin-bottom:0"><b>04</b> — TELEMETRY</p>
+      <span class="badge badge-sim">Simulated preview</span>
     </div>
+    <h2>Every watt, on the record.</h2>
+    <p class="sec-copy">
+      This is what holding $RANCH points at: live numbers from real hardware.
+      Until LONGHORN-01 posts its first epoch, the feed below runs on a
+      <strong>simulation of a clear July day</strong> — clearly labeled, never blended with real data.
+    </p>
+
+    <div class="tiles" id="tiles">
+      <div class="tile">
+        <p class="tile-label">Solar output</p>
+        <p class="tile-value"><span id="t-watts">—</span><small>W</small></p>
+        <p class="tile-sub" id="t-watts-sub">of 200 W panel</p>
+      </div>
+      <div class="tile">
+        <p class="tile-label">Battery</p>
+        <p class="tile-value"><span id="t-batt">—</span><small>%</small></p>
+        <p class="tile-sub">512 Wh LiFePO₄</p>
+      </div>
+      <div class="tile">
+        <p class="tile-label">Data served · 24h</p>
+        <p class="tile-value"><span id="t-data">—</span><small>GB</small></p>
+        <p class="tile-sub">WireGuard exit</p>
+      </div>
+      <div class="tile">
+        <p class="tile-label">Epochs posted</p>
+        <p class="tile-value"><span id="t-epochs">—</span></p>
+        <p class="tile-sub">10-min cadence · 24h window</p>
+      </div>
+    </div>
+
+    <div class="chart-card">
+      <div class="chart-title-row">
+        <p class="chart-title">Solar output — last 24 h (W)</p>
+        <button class="chart-toggle" id="table-toggle" type="button">View as table</button>
+      </div>
+      <div id="chart-box" aria-label="Line chart of simulated solar output in watts over the last 24 hours. A data table alternative is available via the toggle button.">
+        <div id="chart-tooltip"></div>
+      </div>
+      <div id="chart-table"></div>
+    </div>
+
+    <p class="telemetry-note">
+      <b>SIMULATED DATA.</b> Generated in your browser from a clear-sky solar model.
+      The live feed replaces this section the day LONGHORN-01 posts epoch #1 on-chain.
+    </p>
   </section>
+
+  <div class="connector"><span class="node">✳</span><span class="stem"></span></div>
 
   <!-- ============ TOKEN ============ -->
-  <section id="token">
-    <div class="wrap">
-      <p class="sec-eyebrow"><b>05</b> — THE TOKEN</p>
-      <h2>$RANCH holds the gate open.</h2>
-      <p class="sec-copy">
-        $RANCH is an access token on Robinhood Chain, not a share of anything.
-        Hold the threshold and the Herd's services unlock: the solar VPN exit,
-        holder file drops, and whatever the next steer serves.
-      </p>
-      <div class="token-grid">
-        <div class="token-card">
-          <h3>No wallet connect. Ever.</h3>
-          <p>
-            You never connect a wallet to this site. Paste your address; we run a
-            <strong>read-only balance check</strong> against the public Robinhood Chain RPC.
-            Nothing to sign, nothing to approve, no popups, no drainer surface.
-          </p>
-          <div class="access-check">
-            <div class="access-row">
-              <input id="access-input" type="text" placeholder="0x… your address (read-only check)" autocomplete="off" spellcheck="false">
-              <button id="access-btn" type="button">Check</button>
-            </div>
-            <p id="access-result"></p>
-          </div>
+  <section class="wrap" id="token">
+    <p class="sec-label"><b>05</b> — THE TOKEN</p>
+    <h2>$RANCH holds the <span class="lime">gate open.</span></h2>
+    <p class="sec-copy">
+      $RANCH is an access token on Robinhood Chain, not a share of anything.
+      Hold the threshold and the Herd's services unlock: the solar VPN exit,
+      holder file drops, and whatever the next steer serves.
+    </p>
+    <div class="token-grid">
+      <div class="token-card">
+        <h3>No wallet connect. Ever.</h3>
+        <p>
+          You never connect a wallet to this site. Paste your address in the bar at
+          the bottom of the page; we run a <strong>read-only balance check</strong> against
+          the public Robinhood Chain RPC. Nothing to sign, nothing to approve, no
+          popups, no drainer surface.
+        </p>
+        <p>If any page ever asks you to connect a wallet claiming to be us, it's fake.</p>
+        <p class="hint">↓ CHECK ACCESS — bar at the bottom of the page</p>
+      </div>
+      <div class="token-card">
+        <h3>Where the fees ride</h3>
+        <p>Trading fees don't vanish into a wallet. They ride a fixed trail:</p>
+        <ul class="fee-loop">
+          <li><span class="n">01</span>Swap fees accrue on Robinhood Chain</li>
+          <li><span class="n">02</span>Fees fill the hardware pool — address public</li>
+          <li><span class="n">03</span>Pool buys panels, batteries, boards</li>
+          <li><span class="n">04</span>New steer joins the Herd → more holder utility</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="connector"><span class="node">✳</span><span class="stem"></span></div>
+
+  <!-- ============ TRAIL MAP ============ -->
+  <section class="wrap" id="roadmap">
+    <p class="sec-label"><b>06</b> — TRAIL MAP</p>
+    <h2>Short trail, honest markers.</h2>
+    <div class="trail">
+      <div class="trail-row">
+        <p class="trail-when">Q3 2026</p>
+        <div class="trail-what">
+          <h3>Website live · $RANCH deploys</h3>
+          <p>Token contract published and verified on Blockscout. LONGHORN-01 bench build starts; BOM published as it's bought.</p>
         </div>
-        <div class="token-card">
-          <h3>Where the fees ride</h3>
-          <p>Trading fees don't vanish into a wallet. They ride a fixed trail:</p>
-          <ul class="fee-loop">
-            <li><span class="n">01</span>Swap fees accrue on Robinhood Chain</li>
-            <li><span class="n">02</span>Fees fill the hardware pool — address public</li>
-            <li><span class="n">03</span>Pool buys panels, batteries, boards</li>
-            <li><span class="n">04</span>New steer joins the Herd → more holder utility</li>
-          </ul>
+      </div>
+      <div class="trail-row">
+        <p class="trail-when">Q4 2026</p>
+        <div class="trail-what">
+          <h3>Proof of Sunlight · epoch #1</h3>
+          <p>Telemetry contract deploys, LONGHORN-01 goes off-grid and posts its first signed epoch. The simulated dashboard is retired the same day.</p>
+        </div>
+      </div>
+      <div class="trail-row">
+        <p class="trail-when">Q1 2027</p>
+        <div class="trail-what">
+          <h3>Holder access opens</h3>
+          <p>Solar VPN exit unlocks for addresses above the threshold — read-only address check, no wallet connect.</p>
+        </div>
+      </div>
+      <div class="trail-row">
+        <p class="trail-when">2027</p>
+        <div class="trail-what">
+          <h3>MAVERICK-02 · raise your own steer</h3>
+          <p>Second node funded from the fee pool. Open BOM + flashing guide so the community can raise steers and join the Herd's registry.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ============ ROADMAP ============ -->
-  <section id="roadmap">
-    <div class="wrap">
-      <p class="sec-eyebrow"><b>06</b> — TRAIL MAP</p>
-      <h2>Short trail, honest markers.</h2>
-      <div class="trail">
-        <div class="trail-row">
-          <p class="trail-when">Q3 2026</p>
-          <div class="trail-what">
-            <h3>Website live · $RANCH deploys on Robinhood Chain</h3>
-            <p>Token contract published and verified on Blockscout. LONGHORN-01 bench build starts; BOM published as it's bought.</p>
-          </div>
-        </div>
-        <div class="trail-row">
-          <p class="trail-when">Q4 2026</p>
-          <div class="trail-what">
-            <h3>Proof of Sunlight contract · epoch #1</h3>
-            <p>Telemetry contract deploys, LONGHORN-01 goes off-grid and posts its first signed epoch. The simulated dashboard is retired the same day.</p>
-          </div>
-        </div>
-        <div class="trail-row">
-          <p class="trail-when">Q1 2027</p>
-          <div class="trail-what">
-            <h3>Holder access opens</h3>
-            <p>Solar VPN exit unlocks for addresses above the threshold — read-only address check, no wallet connect.</p>
-          </div>
-        </div>
-        <div class="trail-row">
-          <p class="trail-when">2027</p>
-          <div class="trail-what">
-            <h3>MAVERICK-02 · raise-your-own-steer kit</h3>
-            <p>Second node funded from the fee pool. Open BOM + flashing guide so the community can raise steers and join the Herd's registry.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <div class="connector"><span class="node">✳</span><span class="stem"></span></div>
 
   <!-- ============ FAQ ============ -->
-  <section id="faq">
-    <div class="wrap">
-      <p class="sec-eyebrow"><b>07</b> — FAQ</p>
-      <h2>Straight answers.</h2>
-      <div class="faq-list">
-        <details>
-          <summary>Is the hardware real?</summary>
-          <p>LONGHORN-01 is in build — panel-class hardware, not a render. Until it posts epoch #1 on-chain, every number on this site is labeled simulated, and we won't blend simulated and real data. The bill of materials is published as it's purchased.</p>
-        </details>
-        <details>
-          <summary>Do I need to connect a wallet?</summary>
-          <p>No, and you never will on this site. Access is verified by pasting your address for a read-only balance check against the public RPC. Nothing to sign, no approvals, no transaction prompts. If any page ever asks you to connect a wallet claiming to be us, it's fake.</p>
-        </details>
-        <details>
-          <summary>Why Robinhood Chain?</summary>
-          <p>It's an EVM chain (id 4663) with near-zero gas — cheap enough to post telemetry every ten minutes without thinking about it — and it's where we already build and operate. Explorer: robinhoodchain.blockscout.com.</p>
-        </details>
-        <details>
-          <summary>Is this affiliated with Robinhood, or any aerospace company?</summary>
-          <p>No. Solar Ranch is an independent project. It is not affiliated with, endorsed by, or connected to Robinhood Markets, the operators of Robinhood Chain, or any aerospace or space-solar company. The orbital-compute wave inspired the narrative; the hardware here stays firmly on the ground.</p>
-        </details>
-        <details>
-          <summary>Is $RANCH an investment?</summary>
-          <p>No. $RANCH is an experimental access token: it gates services, nothing more. It can go to zero. Nothing on this site is financial advice, and "Corporation" in the name is branding — the project is currently unincorporated.</p>
-        </details>
-      </div>
+  <section class="wrap" id="faq">
+    <p class="sec-label"><b>07</b> — FAQ</p>
+    <h2>Straight answers.</h2>
+    <div class="faq-list">
+      <details>
+        <summary>Is the hardware real?</summary>
+        <p>LONGHORN-01 is in build — panel-class hardware, not a render. Until it posts epoch #1 on-chain, every number on this site is labeled simulated, and we won't blend simulated and real data. The bill of materials is published as it's purchased.</p>
+      </details>
+      <details>
+        <summary>Do I need to connect a wallet?</summary>
+        <p>No, and you never will on this site. Access is verified by pasting your address for a read-only balance check against the public RPC. Nothing to sign, no approvals, no transaction prompts. If any page ever asks you to connect a wallet claiming to be us, it's fake.</p>
+      </details>
+      <details>
+        <summary>Why Robinhood Chain?</summary>
+        <p>It's an EVM chain (id 4663) with near-zero gas — cheap enough to post telemetry every ten minutes without thinking about it — and it's where we already build and operate. Explorer: robinhoodchain.blockscout.com.</p>
+      </details>
+      <details>
+        <summary>Is this affiliated with Robinhood, or any aerospace company?</summary>
+        <p>No. Solar Ranch is an independent project. It is not affiliated with, endorsed by, or connected to Robinhood Markets, the operators of Robinhood Chain, or any aerospace or space-solar company. The orbital-compute wave inspired the narrative; the hardware here stays firmly on the ground.</p>
+      </details>
+      <details>
+        <summary>Is $RANCH an investment?</summary>
+        <p>No. $RANCH is an experimental access token: it gates services, nothing more. It can go to zero. Nothing on this site is financial advice, and "Corporation" in the name is branding — the project is currently unincorporated.</p>
+      </details>
     </div>
   </section>
 
-  <!-- ============ FOOTER ============ -->
-  <footer>
+  <!-- ============ PAPER FOOTER ============ -->
+  <footer class="paper">
     <div class="wrap">
-      <div class="foot-grid">
-        <div class="foot-brand"><span class="logo-mark"></span> SOLAR RANCH CORP.</div>
-        <div class="foot-links">
-          <a href="#protocol">Protocol</a>
-          <a href="#telemetry">Telemetry</a>
-          <a href="https://robinhoodchain.blockscout.com" target="_blank" rel="noopener">Explorer</a>
-        </div>
-      </div>
-      <p class="disclaimer">
-        SOLAR RANCH is an independent experiment in provable off-grid compute. Not affiliated with
-        Robinhood Markets, Inc., the operators of Robinhood Chain, or any aerospace or space-solar
-        company. $RANCH is an experimental utility token with no expectation of profit; it may lose
-        all value. Telemetry shown before epoch #1 is simulated and labeled as such. Nothing on this
-        site is financial, investment, or legal advice. © 2026 Solar Ranch.
+      <span class="wordmark">SOLAR RANCH<span class="corp">CORP.</span></span>
+      <hr class="paper-rule">
+      <nav class="paper-links">
+        <a href="#protocol">Protocol</a>
+        <a href="#telemetry">Telemetry</a>
+        <a href="https://robinhoodchain.blockscout.com" target="_blank" rel="noopener">Explorer</a>
+        <a href="https://github.com/giupy997/solarrh" target="_blank" rel="noopener">Source</a>
+      </nav>
+      <p class="paper-copy">© 2026 Solar Ranch. All watts accounted for.</p>
+      <p class="paper-legal">
+        Solar Ranch is an independent experiment in provable off-grid compute. It is not
+        affiliated with Robinhood Markets, Inc., the operators of Robinhood Chain, or any
+        aerospace or space-solar company. $RANCH is an experimental utility token with no
+        expectation of profit; it may lose all value. Telemetry shown before epoch #1 is
+        simulated and labeled as such. Nothing on this site is financial, investment, or
+        legal advice. "Corporation" is branding; the project is currently unincorporated.
       </p>
     </div>
   </footer>
+
+  <!-- ============ STICKY ACCESS BAR ============ -->
+  <div class="access-bar">
+    <p id="access-result"></p>
+    <div class="access-bar-inner">
+      <div class="access-fields">
+        <p class="access-label">Check access</p>
+        <input id="access-input" type="text" placeholder="Enter your address" autocomplete="off" spellcheck="false" aria-label="EVM address for read-only balance check">
+      </div>
+      <button id="access-btn" type="button" aria-label="Check access">→</button>
+    </div>
+  </div>
 
   <script src="app.js"></script>
 </body>
