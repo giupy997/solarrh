@@ -253,7 +253,7 @@
   <section class="wrap" id="telemetry">
     <div class="telemetry-head">
       <p class="sec-label" style="margin-bottom:0"><b>04</b> — TELEMETRY</p>
-      <span class="badge badge-sim">Simulated preview</span>
+      <span class="badge badge-sim" id="telemetry-badge">Simulated preview</span>
     </div>
     <h2>Every watt, on the record.</h2>
     <p class="sec-copy">
@@ -296,7 +296,7 @@
       <div id="chart-table"></div>
     </div>
 
-    <p class="telemetry-note">
+    <p class="telemetry-note" id="telemetry-note">
       <b>SIMULATED DATA.</b> Generated in your browser from a clear-sky solar model.
       The live feed replaces this section the day LONGHORN-01 posts epoch #1 on-chain.
     </p>
@@ -443,6 +443,8 @@
     </div>
   </div>
 
+  <script src="config.js"></script>
   <script src="app.js"></script>
+  <script src="live.js"></script>
 </body>
 </html>
